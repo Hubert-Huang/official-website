@@ -183,6 +183,34 @@
     .cta-panel{background:linear-gradient(120deg,#eaf4fb 0%,#eef8f8 58%,#eff8e8 100%);border-color:#c7e2f2}
     .reveal{transition-duration:.55s}
     @media(max-width:760px){.container-wide{width:min(calc(100% - 32px),600px)}.section{padding:68px 0}.hero{padding-top:112px}.hero-title{letter-spacing:-.035em}.section-title{font-size:clamp(1.9rem,9vw,2.7rem)}.btn-primary,.btn-secondary{width:100%}}
+    .intro-video-shell{max-width:960px;margin-inline:auto}
+    .intro-video-frame{position:relative;aspect-ratio:16/9;overflow:hidden;border:8px solid #fff;border-radius:28px;background:#0a3d91;box-shadow:0 22px 60px rgba(10,61,145,.18)}
+    .intro-video-frame:before{content:"";position:absolute;inset:-25%;background:linear-gradient(135deg,rgba(0,167,181,.28),rgba(0,91,172,.32),rgba(122,193,67,.18));filter:blur(35px);pointer-events:none}
+    .intro-video-frame iframe{position:relative;z-index:1;width:100%;height:100%;border:0;display:block}
+    @media(max-width:760px){.intro-video-frame{border-width:5px;border-radius:20px}}
+    .video-rights-note{display:flex;align-items:flex-start;gap:12px;margin:16px auto 0;max-width:960px;padding:15px 18px;border:1px solid #d9e2ec;border-radius:14px;background:#f5f7fa;color:#64748b;font-size:.8rem;line-height:1.75}
+    .video-rights-note i{flex:0 0 auto;margin-top:4px;color:#005bac}
+    .video-rights-note p{margin:0}
+    .video-rights-note strong{color:#1f2937}
+    .video-rights-note a{color:#005bac;text-decoration:underline;text-underline-offset:3px}
+    .contact-email{display:flex;flex-wrap:wrap;align-items:center;gap:8px;color:#475569;font-size:.95rem}
+    .contact-email i{color:#005bac}
+    .contact-email a{color:#005bac;font-weight:700;text-decoration:underline;text-underline-offset:3px}
+    .contact-form-card{border:1px solid #d9e2ec;border-radius:22px;background:#fff;padding:clamp(22px,3vw,32px);box-shadow:0 8px 28px rgba(31,41,55,.07)}
+    .form-field{margin-bottom:16px}
+    .form-field label{display:block;margin-bottom:6px;color:#1f2937;font-size:.88rem;font-weight:700}
+    .form-field input,.form-field textarea,.form-field select{display:block;width:100%;border:1px solid #b8c9d8;border-radius:12px;background:#fff;padding:11px 13px;color:#1f2937;font-size:.92rem;line-height:1.5;transition:border-color .2s,box-shadow .2s}
+    .form-field textarea{resize:vertical;min-height:110px}
+    .form-field input::placeholder,.form-field textarea::placeholder{color:#94a3b8}
+    .form-field input:focus,.form-field textarea:focus,.form-field select:focus{outline:0;border-color:#00a7b5;box-shadow:0 0 0 4px rgba(0,167,181,.14)}
+    .form-success-modal{position:fixed;inset:0;z-index:100;display:grid;place-items:center;visibility:hidden;opacity:0;transition:opacity .2s,visibility .2s}
+    .form-success-modal.is-visible{visibility:visible;opacity:1}
+    .form-success-backdrop{position:absolute;inset:0;background:rgba(10,61,145,.4);backdrop-filter:blur(5px)}
+    .form-success-dialog{position:relative;width:min(calc(100% - 32px),420px);padding:34px 28px;text-align:center;border:1px solid #d9e2ec;border-radius:24px;background:#fff;box-shadow:0 24px 70px rgba(10,61,145,.24)}
+    .form-success-icon{width:54px;height:54px;margin:0 auto 16px;display:grid;place-items:center;border-radius:50%;background:#eaf8e1;color:#7ac143;font-size:1.35rem}
+    .form-success-dialog h2{margin:0 0 8px;color:#0a3d91;font-size:1.35rem;font-weight:800}
+    .form-success-dialog p{margin:0 0 24px;color:#64748b}
+    .form-success-dialog .btn-primary{width:100%}
   </style>
   <script type="application/ld+json">
   {
@@ -284,6 +312,25 @@
           <article class="p-6 rounded-2xl border border-slate-200 reveal"><div class="icon-box mb-4"><svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3 20 7v5c0 5-3.5 8-8 10-4.5-2-8-5-8-10V7l8-4Z"/><path d="m8 12 2.5 2.5L16 9"/></svg></div><h3 class="font-bold text-lg mb-2">務實落地</h3><p class="text-sm text-slate-600">不以文件數量衡量成果，而是讓管理要求能對應實際流程與工作情境。</p></article>
           <article class="p-6 rounded-2xl border border-slate-200 reveal reveal-delay-1"><div class="icon-box mb-4"><svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><h3 class="font-bold text-lg mb-2">持續改善</h3><p class="text-sm text-slate-600">把風險辨識、追蹤與改善融入管理循環，逐步建立長期運作能力。</p></article>
           <article class="p-6 rounded-2xl border border-slate-200 reveal reveal-delay-2"><div class="icon-box mb-4"><svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><h3 class="font-bold text-lg mb-2">共同建立能力</h3><p class="text-sm text-slate-600">與組織團隊協作，協助同仁理解制度、熟悉責任並逐步具備自主維運能力。</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="intro-video" class="section">
+      <div class="container-wide">
+        <div class="text-center max-w-3xl mx-auto mb-10 reveal">
+          <p class="eyebrow mb-4">INTRODUCTION / 影片介紹</p>
+          <h2 class="section-title mb-5">用一段影片，認識我的專業與信念</h2>
+          <p class="section-lead mx-auto">透過影片了解我的工作方式、服務理念，以及如何陪伴組織把資安治理真正落實在日常。</p>
+        </div>
+        <div class="intro-video-shell reveal reveal-delay-1">
+          <div class="intro-video-frame">
+            <iframe src="https://www.youtube-nocookie.com/embed/XaDeuYIQMOs?rel=0" title="黃文鴻個人介紹影片" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <aside class="video-rights-note" aria-label="影片來源與著作權聲明">
+            <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+            <p><strong>影片來源與權利聲明：</strong>本影片並非本人製作，影片內容、影像、音樂及其他素材之著作權與相關權利，歸原作者及其他合法權利人所有。本頁僅透過 YouTube 官方嵌入播放器提供觀看，並附上<a href="https://www.youtube.com/watch?v=XaDeuYIQMOs" target="_blank" rel="noopener noreferrer">原始影片連結</a>；本站不下載、重製、改作、另行公開傳輸或主張擁有本影片之權利。如權利人認為嵌入或展示方式不妥，請聯絡本站，我們會儘速處理。</p>
+          </aside>
         </div>
       </div>
     </section>
@@ -415,17 +462,24 @@
           <div class="reveal">
             <p class="eyebrow mb-4">CONTACT ME / 聯絡我</p>
             <h2 class="section-title mb-5">一起聊聊您的資安需求</h2>
-            <p class="section-lead mb-7">歡迎透過社群與我聯繫，或填寫需求表單，讓我先了解您的組織現況與希望解決的問題。</p>
+            <p class="section-lead mb-5">歡迎透過社群與我聯繫，或填寫需求表單，讓我先了解您的組織現況與希望解決的問題。</p>
+            <p class="contact-email mb-7"><i class="fa-solid fa-envelope" aria-hidden="true"></i><span>聯絡信箱：</span><a href="mailto:polo20068246@gmail.com">polo20068246@gmail.com</a></p>
             <div class="flex flex-wrap gap-3" aria-label="社群聯絡方式">
               <a class="icon-box" href="https://line.me/ti/p/xXzeihXnHN" target="_blank" rel="noopener noreferrer" aria-label="LINE" title="LINE"><i class="fa-brands fa-line" aria-hidden="true"></i></a>
               <a class="icon-box" href="https://www.facebook.com/wen.hung.huang.773212" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
             </div>
           </div>
-          <div class="industry-card reveal reveal-delay-1">
-            <div class="icon-box mb-5" aria-hidden="true"><i class="fa-solid fa-clipboard-list"></i></div>
-            <h3 class="font-bold text-xl mb-3">填寫需求表單</h3>
-            <p class="text-sm text-slate-600 mb-6">請留下您的需求與聯絡資訊，我會依據內容回覆適合的合作方向。</p>
-            <a class="btn-primary inline-flex items-center gap-2" href="https://forms.gle/6MnFeMF7MB9qUTS36" target="_blank" rel="noopener noreferrer">前往填寫表單 <i class="fa-solid fa-arrow-up-right-from-square text-xs" aria-hidden="true"></i></a>
+          <div class="contact-form-card reveal reveal-delay-1">
+            <div class="flex items-start justify-between gap-4 mb-6"><div><h3 class="font-bold text-xl mb-2">聯絡我們</h3><p class="text-sm text-slate-600">留下資訊，我會依照適合的時間與您聯繫。</p></div><div class="icon-box shrink-0" aria-hidden="true"><i class="fa-solid fa-clipboard-list"></i></div></div>
+            <form id="contact-form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeFSc18udSNJldIlBjz4dnfKa9pdRo8Mvu9CePPljZ5MO-Qng/formResponse" method="post" target="google-form-submit-frame" onsubmit="submitGoogleForm(event)">
+              <div class="form-field"><label for="contact-name">您的姓名／稱呼</label><input id="contact-name" name="entry.588998168" type="text" autocomplete="name" required placeholder="請輸入姓名或稱呼"></div>
+              <div class="form-field"><label for="contact-email">聯絡電子信箱</label><input id="contact-email" name="entry.476214014" type="email" autocomplete="email" required placeholder="name@example.com"></div>
+              <div class="form-field"><label for="contact-need">您的需求</label><textarea id="contact-need" name="entry.1610329698" rows="4" required placeholder="請簡述您希望討論的主題或目前遇到的問題"></textarea></div>
+              <div class="form-field"><label for="contact-time">適合聯絡的時間</label><select id="contact-time" name="entry.1091995575" required><option value="" selected disabled>請選擇方便聯絡的時段</option><option>平日上午 09:00–12:00</option><option>平日下午 13:30–17:30</option><option>平日晚上 18:30–21:00</option><option>時間彈性，請先以 Email 聯繫</option></select></div>
+              <button class="btn-primary w-full" type="submit">送出聯絡需求 <i class="fa-solid fa-paper-plane text-sm" aria-hidden="true"></i></button>
+              <p class="text-xs text-slate-500 mt-3">送出後將開啟您的郵件程式，寄送至 polo20068246@gmail.com。</p>
+            </form>
+            <iframe name="google-form-submit-frame" id="google-form-submit-frame" class="sr-only" title="Google 表單背景提交框架" aria-hidden="true"></iframe>
           </div>
         </div>
       </div>
@@ -546,5 +600,66 @@
     document.getElementById('close-article').addEventListener('click', () => detail.classList.add('hidden'));
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
+  <script>
+    async function submitGoogleForm(event) {
+      event.preventDefault();
+      const form = event.currentTarget;
+      const button = form.querySelector('button[type="submit"]');
+      if (form.dataset.submitting === 'true') return;
+      form.dataset.submitting = 'true';
+      button.disabled = true;
+      const originalButtonText = button.innerHTML;
+      button.innerHTML = '<i class="fa-solid fa-spinner fa-spin" aria-hidden="true"></i> 正在送出…';
+      const action = form.getAttribute('action');
+      const formData = new FormData(form);
+      try {
+        await fetch(action, {
+          method: 'POST',
+          mode: 'no-cors',
+          body: new URLSearchParams(formData)
+        });
+        form.reset();
+        const modal = document.getElementById('form-success-modal');
+        modal.classList.add('is-visible');
+        modal.setAttribute('aria-hidden', 'false');
+      } catch (error) {
+        HTMLFormElement.prototype.submit.call(form);
+      } finally {
+        button.disabled = false;
+        button.innerHTML = originalButtonText;
+        form.dataset.submitting = 'false';
+      }
+    }
+    function closeFormSuccess() {
+      const modal = document.getElementById('form-success-modal');
+      modal.classList.remove('is-visible');
+      modal.setAttribute('aria-hidden', 'true');
+    }
+
+    function sendContactEmail(event) {
+      event.preventDefault();
+      const form = event.currentTarget;
+      const data = new FormData(form);
+      const subject = `網站聯絡需求｜${data.get('name')}`;
+      const body = [
+        `姓名／稱呼：${data.get('name')}`,
+        `聯絡電子信箱：${data.get('email')}`,
+        `適合聯絡的時間：${data.get('time')}`,
+        '',
+        '您的需求：',
+        data.get('need')
+      ].join('\n');
+      window.location.href = `mailto:polo20068246@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    }
+  </script>
+  <div id="form-success-modal" class="form-success-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="form-success-title">
+    <div class="form-success-backdrop" onclick="closeFormSuccess()"></div>
+    <div class="form-success-dialog">
+      <div class="form-success-icon"><i class="fa-solid fa-check" aria-hidden="true"></i></div>
+      <h2 id="form-success-title">需求已送出</h2>
+      <p>我們將盡快與您聯絡！</p>
+      <button class="btn-primary" type="button" onclick="closeFormSuccess()">完成</button>
+    </div>
+  </div>
 </body>
 </html>
