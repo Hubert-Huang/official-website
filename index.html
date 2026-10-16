@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="黃文鴻，博創資訊科技輔導顧問，專注 ISO 27001、ISO 27701、資安治理與隱私管理，協助企業及政府組織建立可落地、可持續改善的管理能力。">
+  <meta property="og:title" content="黃文鴻｜不只拿證，更帶走能力">
+  <meta property="og:description" content="以國際標準為基礎，建立可持續運作的資安、隱私治理與數位韌性能力。">
+  <meta property="og:type" content="website">
+  <title>黃文鴻｜不只拿證，更帶走能力</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: { ink:'#1F2937', bluebrand:'#005BAC', navblue:'#0A3D91', teal:'#00A7B5', cyan:'#5CC8D7', accent:'#7AC143', cloud:'#F5F7FA' },
+        fontFamily: { sans:['DM Sans','Noto Sans TC','system-ui','sans-serif'] },
+        boxShadow: { soft:'0 16px 48px rgba(0,91,172,.12)', card:'0 8px 30px rgba(31,41,55,.08)' }
+      }}
+    }
+  </script>
+  <style>
+    :root{--blue:#005bac;--navblue:#0a3d91;--teal:#00a7b5;--cyan:#5cc8d7;--accent:#7ac143;--ink:#1f2937;--muted:#64748b;--line:#d9e2ec}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:100px}
+    body{margin:0;background:#fff;color:var(--ink);font-family:"DM Sans","Noto Sans TC",system-ui,sans-serif;line-height:1.75;overflow-x:hidden}
+    a{color:inherit;text-decoration:none}
+    button,a{-webkit-tap-highlight-color:transparent}
+    a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #10b981;outline-offset:4px;border-radius:8px}
+    .container-wide{width:min(1160px,calc(100% - 48px));margin-inline:auto}
+    .eyebrow{font-size:.76rem;letter-spacing:.15em;text-transform:uppercase;font-weight:700;color:var(--blue)}
+    .section{padding:104px 0;position:relative}
+    .section-title{font-size:clamp(2rem,4vw,3.15rem);line-height:1.2;letter-spacing:-.045em;font-weight:800}
+    .section-lead{max-width:650px;color:var(--muted);font-size:1.03rem}
+    .gradient-text{background:linear-gradient(100deg,#2563eb 0%,#7c3aed 70%,#0f9f8f 120%);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .glass{background:rgba(255,255,255,.78);backdrop-filter:blur(18px);border:1px solid rgba(226,232,240,.85);box-shadow:0 14px 50px rgba(37,99,235,.08)}
+    .nav-shell{transition:background .3s,box-shadow .3s,border-color .3s}
+    .nav-shell.scrolled{background:rgba(255,255,255,.88);backdrop-filter:blur(18px);box-shadow:0 8px 28px rgba(15,23,42,.06);border-bottom:1px solid rgba(226,232,240,.8)}
+    .nav-link{font-size:.9rem;color:#475569;transition:color .2s}
+    .nav-link:hover,.nav-link.active{color:var(--blue)}
+    .btn-primary{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;padding:13px 21px;border-radius:999px;color:white;background:linear-gradient(110deg,#2563eb,#6d45e9);font-weight:700;font-size:.93rem;box-shadow:0 10px 24px rgba(37,99,235,.22);transition:transform .25s,box-shadow .25s,filter .25s}
+    .btn-primary:hover{transform:translateY(-2px);box-shadow:0 14px 30px rgba(37,99,235,.3);filter:saturate(1.1)}
+    .btn-secondary{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;padding:12px 20px;border:1px solid #cbd5e1;border-radius:999px;background:rgba(255,255,255,.75);font-weight:700;font-size:.93rem;transition:border-color .25s,transform .25s,background .25s}
+    .btn-secondary:hover{border-color:#93c5fd;background:#eff6ff;transform:translateY(-2px)}
+    .hero{position:relative;isolation:isolate;overflow:hidden;padding:150px 0 92px;background:radial-gradient(ellipse at 78% 30%,rgba(219,234,254,.75),transparent 36%),radial-gradient(ellipse at 92% 70%,rgba(237,233,254,.7),transparent 32%),linear-gradient(180deg,#fff 0%,#f8fbff 100%)}
+    .hero:before{content:"";position:absolute;inset:0;z-index:-1;opacity:.36;background-image:linear-gradient(rgba(37,99,235,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(37,99,235,.07) 1px,transparent 1px);background-size:42px 42px;mask-image:linear-gradient(to right,transparent 20%,black 100%)}
+    .hero-grid{display:grid;grid-template-columns:1.02fr .98fr;align-items:center;gap:54px}
+    .hero-title{font-size:clamp(2.8rem,5.5vw,5.1rem);line-height:1.12;letter-spacing:-.06em;font-weight:800}
+    .type-cursor{display:inline-block;width:3px;height:.88em;background:#2563eb;margin-left:5px;vertical-align:-.04em;animation:blink 1s steps(2,start) infinite}
+    @keyframes blink{to{visibility:hidden}}
+    .hero-visual{min-height:440px;position:relative;display:grid;place-items:center}
+    .orbital{position:absolute;width:min(440px,100%);aspect-ratio:1;border:1px solid rgba(96,165,250,.32);border-radius:50%;animation:rotate 42s linear infinite}
+    .orbital:before,.orbital:after{content:"";position:absolute;border:1px solid rgba(124,58,237,.2);border-radius:50%;inset:11%}
+    .orbital:after{inset:24%;border-color:rgba(16,185,129,.23)}
+    @keyframes rotate{to{transform:rotate(360deg)}}
+    .visual-core{position:relative;width:220px;height:220px;border-radius:42% 58% 54% 46% / 45% 43% 57% 55%;background:linear-gradient(145deg,rgba(219,234,254,.96),rgba(237,233,254,.82) 55%,rgba(209,250,229,.7));box-shadow:inset 0 0 45px rgba(255,255,255,.8),0 24px 70px rgba(37,99,235,.13);display:grid;place-items:center;animation:morph 12s ease-in-out infinite}
+    @keyframes morph{0%,100%{border-radius:42% 58% 54% 46% / 45% 43% 57% 55%}50%{border-radius:58% 42% 43% 57% / 52% 58% 42% 48%}}
+    .core-icon{width:100px;height:100px;color:#2563eb;filter:drop-shadow(0 8px 16px rgba(37,99,235,.18))}
+    .float-card{position:absolute;padding:13px 16px;border-radius:16px;min-width:148px}
+    .float-card.one{top:11%;left:0}
+    .float-card.two{right:-1%;top:29%}
+    .float-card.three{bottom:8%;left:8%}
+    .dot{width:8px;height:8px;border-radius:50%;background:#10b981;display:inline-block;box-shadow:0 0 0 5px rgba(16,185,129,.1)}
+    .metric{border:1px solid #e2e8f0;background:#fff;border-radius:18px;padding:22px}
+    .metric-number{font-size:2.1rem;line-height:1;font-weight:800;letter-spacing:-.05em}
+    .soft-bg{background:linear-gradient(180deg,#f8fafc 0%,#fff 100%)}
+    .service-card,.insight-card,.industry-card{border:1px solid #e2e8f0;border-radius:22px;background:white;padding:27px;transition:transform .28s,border-color .28s,box-shadow .28s}
+    .service-card:hover,.insight-card:hover,.industry-card:hover{transform:translateY(-5px);border-color:#bfdbfe;box-shadow:0 18px 45px rgba(37,99,235,.09)}
+    .icon-box{width:48px;height:48px;border-radius:15px;display:grid;place-items:center;background:linear-gradient(145deg,#eff6ff,#f5f3ff);color:#2563eb}
+    .tag{display:inline-flex;padding:5px 10px;border-radius:999px;background:#eff6ff;color:#1d4ed8;font-size:.76rem;font-weight:700}
+    .about-visual{min-height:430px;border-radius:28px;position:relative;overflow:hidden;background:radial-gradient(circle at 25% 25%,rgba(191,219,254,.9),transparent 35%),radial-gradient(circle at 80% 75%,rgba(221,214,254,.85),transparent 34%),linear-gradient(135deg,#f8fbff,#eef2ff);border:1px solid #e2e8f0}
+    .about-visual:before{content:"";position:absolute;inset:0;background-image:radial-gradient(#93c5fd 1px,transparent 1px);background-size:19px 19px;opacity:.3}
+    .about-emblem{position:absolute;inset:0;display:grid;place-items:center}
+    .about-emblem-inner{width:190px;height:190px;border:1px solid rgba(37,99,235,.28);border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.4);box-shadow:0 0 0 24px rgba(255,255,255,.2),0 0 0 48px rgba(255,255,255,.12)}
+    .about-emblem-inner svg{width:78px;height:78px;color:#2563eb}
+    .about-note{position:absolute;bottom:20px;left:20px;right:20px;padding:16px 18px;border-radius:16px;background:rgba(255,255,255,.8);backdrop-filter:blur(12px);border:1px solid white}
+    .timeline{position:relative}
+    .timeline:before{content:"";position:absolute;left:18px;top:12px;bottom:12px;width:1px;background:linear-gradient(#93c5fd,#c4b5fd,#a7f3d0)}
+    .timeline-item{position:relative;padding-left:52px;padding-bottom:26px}
+    .timeline-dot{position:absolute;left:10px;top:5px;width:17px;height:17px;border:4px solid white;border-radius:50%;background:#3b82f6;box-shadow:0 0 0 1px #bfdbfe}
+    .process-step{position:relative;padding:24px 20px;border-radius:20px;border:1px solid #e2e8f0;background:white}
+    .process-num{font-size:2.3rem;font-weight:800;line-height:1;color:#bfdbfe;letter-spacing:-.06em}
+    .faq-item{border-bottom:1px solid #e2e8f0;padding:20px 0}
+    .faq-item summary{cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:20px;font-weight:700}
+    .faq-item summary::-webkit-details-marker{display:none}
+    .faq-item summary:after{content:"+";font-size:1.5rem;font-weight:400;color:#2563eb}
+    .faq-item[open] summary:after{content:"−"}
+    .faq-answer{padding:14px 30px 0 0;color:#475569}
+    .cta-panel{position:relative;overflow:hidden;border-radius:30px;padding:clamp(30px,6vw,66px);background:radial-gradient(circle at 90% 10%,rgba(167,139,250,.35),transparent 32%),radial-gradient(circle at 5% 100%,rgba(96,165,250,.28),transparent 32%),linear-gradient(120deg,#eff6ff,#faf5ff 70%,#f0fdf4);border:1px solid #e0e7ff}
+    .cta-panel:after{content:"";position:absolute;right:-70px;bottom:-140px;width:330px;height:330px;border:1px solid rgba(37,99,235,.2);border-radius:50%;box-shadow:0 0 0 32px rgba(255,255,255,.14),0 0 0 64px rgba(255,255,255,.12);pointer-events:none}
+    .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+    .reveal.visible{opacity:1;transform:translateY(0)}
+    .reveal-delay-1{transition-delay:.08s}.reveal-delay-2{transition-delay:.16s}.reveal-delay-3{transition-delay:.24s}
+    .footer-link{color:#64748b;transition:color .2s}.footer-link:hover{color:#2563eb}
+    .mobile-menu{display:none}
+    @media(max-width:900px){.hero-grid{grid-template-columns:1fr;gap:20px}.hero-copy{max-width:760px}.hero-visual{min-height:390px}.float-card.two{right:5%}.section{padding:82px 0}}
+    @media(max-width:760px){.container-wide{width:min(100% - 36px,600px)}.desktop-nav{display:none}.mobile-toggle{display:inline-flex!important}.mobile-menu.open{display:flex}.hero{padding:125px 0 60px}.hero-title{font-size:clamp(2.5rem,12vw,4rem)}.hero-visual{min-height:340px;margin-top:8px}.orbital{width:320px}.visual-core{width:165px;height:165px}.core-icon{width:75px;height:75px}.float-card{min-width:0;padding:10px 12px;font-size:.8rem}.float-card.one{top:7%;left:0}.float-card.two{right:0;top:26%}.float-card.three{bottom:4%;left:0}.section{padding:68px 0}.about-visual{min-height:340px}.metric{padding:17px}.metric-number{font-size:1.7rem}.process-step{padding:20px 17px}.timeline:before{left:15px}.timeline-item{padding-left:43px}.timeline-dot{left:7px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
+    /* Brand palette: Primary Blue, Navigation Blue, Secondary Teal, Accent Green, Neutral Gray */
+    .text-blue-600,.text-blue-900{color:#005bac!important}
+    .text-violet-600{color:#0a3d91!important}
+    .text-emerald-600{color:#7ac143!important}
+    .bg-blue-50{background-color:#eaf4fb!important}
+    .border-blue-100{border-color:#c7e2f2!important}
+    .bg-violet-50{background-color:#eef5f8!important}
+    .from-blue-600{--tw-gradient-from:#005bac var(--tw-gradient-from-position)!important;--tw-gradient-to:rgb(0 91 172 / 0) var(--tw-gradient-to-position)!important}
+    .to-violet-600{--tw-gradient-to:#0a3d91 var(--tw-gradient-to-position)!important}
+    .bg-blue-600{background-color:#005bac!important}
+    .border-slate-200,.border-slate-100{border-color:#d9e2ec!important}
+    .text-slate-400,.text-slate-500,.text-slate-600{color:#64748b!important}
+    .text-slate-700,.text-slate-800{color:#1f2937!important}
+    .bg-slate-50{background-color:#f5f7fa!important}
+    .btn-secondary:hover{border-color:#5cc8d7;background:#eaf8fa}
+    .gradient-text{background-image:linear-gradient(100deg,#005bac 0%,#00a7b5 68%,#7ac143 100%)}
+    .hero{background:radial-gradient(ellipse at 78% 30%,rgba(92,200,215,.24),transparent 36%),radial-gradient(ellipse at 92% 70%,rgba(122,193,67,.16),transparent 32%),linear-gradient(180deg,#fff 0%,#f5f7fa 100%)}
+    .hero:before{background-image:linear-gradient(rgba(0,91,172,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(0,91,172,.07) 1px,transparent 1px)}
+    .type-cursor,.timeline-dot{background:#005bac}
+    .dot{background:#7ac143;box-shadow:0 0 0 5px rgba(122,193,67,.14)}
+    .process-num{color:#5cc8d7}
+    .faq-item summary:after{color:#005bac}
+    .footer-link:hover{color:#005bac}
+  </style>
+</head>
+<body>
+  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[100] focus:bg-white focus:px-4 focus:py-2 focus:shadow-lg">跳至主要內容</a>
+  <header id="site-header" class="nav-shell fixed top-0 left-0 right-0 z-50 bg-white/70 border-b border-transparent">
+    <div class="container-wide h-[76px] flex items-center justify-between gap-5">
+      <a href="#home" class="flex items-center gap-3" aria-label="黃文鴻首頁">
+        <span class="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-600 to-violet-600 text-white grid place-items-center font-bold tracking-tight">WH</span>
+        <span class="leading-tight"><span class="block font-bold text-[15px]">黃文鴻</span><span class="block text-[11px] text-slate-500 tracking-wider">CYBERSECURITY · GOVERNANCE</span></span>
+      </a>
+      <nav class="desktop-nav flex items-center gap-7" aria-label="主要導覽">
+        <a class="nav-link" href="#about">關於我</a><a class="nav-link" href="#services">專業服務</a><a class="nav-link" href="#experience">服務經驗</a><a class="nav-link" href="#insights">專業觀點</a><a class="nav-link" href="#process">合作流程</a><a class="nav-link" href="#faq">常見問題</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <a class="btn-primary !py-[10px] !px-[17px] hidden sm:inline-flex" href="https://calendar.app.google/GBNMT4ESxxPKFXq26" target="_blank" rel="noopener noreferrer">預約諮詢 <span aria-hidden="true">↗</span></a>
+        <button id="mobile-toggle" class="mobile-toggle hidden items-center justify-center w-10 h-10 rounded-xl border border-slate-200" aria-label="開啟導覽選單" aria-expanded="false" aria-controls="mobile-menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+    <nav id="mobile-menu" class="mobile-menu container-wide flex-col gap-1 pb-4" aria-label="行動版導覽">
+      <a class="nav-link py-2" href="#about">關於我</a><a class="nav-link py-2" href="#services">專業服務</a><a class="nav-link py-2" href="#experience">服務經驗</a><a class="nav-link py-2" href="#insights">專業觀點</a><a class="nav-link py-2" href="#process">合作流程</a><a class="nav-link py-2" href="#faq">常見問題</a>
+      <a class="btn-primary mt-2 self-start" href="https://calendar.app.google/GBNMT4ESxxPKFXq26" target="_blank" rel="noopener noreferrer">預約專業諮詢 ↗</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section id="home" class="hero">
+      <div class="container-wide hero-grid">
+        <div class="hero-copy">
+          <div class="inline-flex items-center gap-2 rounded-full border border-blue-100 bg-white/80 px-4 py-2 text-xs sm:text-sm text-slate-600 mb-7 shadow-sm">
+            <span class="dot"></span><span>資安治理 · 隱私管理 · 數位韌性</span>
+          </div>
+          <p class="eyebrow mb-4">HUANG WEN-HUNG · CONSULTANT</p>
+          <h1 class="hero-title mb-6"><span id="typed-title">不只拿證，更帶走能力。</span><span id="type-cursor" class="type-cursor" aria-hidden="true"></span></h1>
+          <p class="text-lg sm:text-xl text-slate-600 leading-relaxed max-w-[640px] mb-8">我是黃文鴻，博創資訊科技輔導顧問。以國際標準為基礎，協助企業與政府組織把資安、隱私管理要求，轉化為真正可執行、可持續改善的管理能力。</p>
+          <div class="flex flex-wrap gap-3 mb-9">
+            <a class="btn-primary" href="https://calendar.app.google/GBNMT4ESxxPKFXq26" target="_blank" rel="noopener noreferrer">預約專業諮詢 <span aria-hidden="true">↗</span></a>
+            <a class="btn-secondary" href="#about">探索我的專業 <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="flex flex-wrap gap-x-5 gap-y-2 text-sm text-slate-500">
+            <span class="flex items-center gap-2"><span class="text-blue-600">✓</span>以組織情境為起點</span>
+            <span class="flex items-center gap-2"><span class="text-blue-600">✓</span>重視制度落地</span>
+            <span class="flex items-center gap-2"><span class="text-blue-600">✓</span>培養自主維運能力</span>
+          </div>
+        </div>
+        <div class="hero-visual" aria-label="象徵資安治理與數位韌性的抽象科技圖像">
+          <div class="orbital" aria-hidden="true"></div>
+          <div class="visual-core" aria-hidden="true">
+            <svg class="core-icon" viewBox="0 0 100 100" fill="none"><path d="M50 8 80 20v24c0 22-13 38-30 48C33 82 20 66 20 44V20L50 8Z" stroke="currentColor" stroke-width="2.6"/><path d="m35 49 10 10 21-23" stroke="#10B981" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="50" cy="50" r="36" stroke="currentColor" stroke-opacity=".18" stroke-dasharray="3 5"/></svg>
+          </div>
+          <div class="float-card one glass"><div class="text-xs text-slate-500 mb-1">MANAGEMENT SYSTEM</div><div class="font-bold">制度 × 實務</div><div class="text-xs text-slate-500 mt-1">從規範走向日常運作</div></div>
+          <div class="float-card two glass"><div class="flex items-center gap-2 mb-1"><span class="dot"></span><span class="text-xs text-slate-500">RESILIENCE</span></div><div class="font-bold">建立數位韌性</div></div>
+          <div class="float-card three glass"><div class="text-xs text-slate-500 mb-1">CORE FRAMEWORKS</div><div class="flex gap-2 text-xs font-bold"><span class="tag">ISO 27001</span><span class="tag">27701</span></div></div>
+        </div>
+      </div>
+      <div class="container-wide mt-10 pt-7 border-t border-slate-200/80">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div class="flex items-center gap-3"><span class="text-blue-600 font-bold text-2xl">01</span><div><div class="font-bold text-sm">資訊安全管理</div><div class="text-xs text-slate-500">ISO 27001 · ISMS</div></div></div>
+          <div class="flex items-center gap-3"><span class="text-violet-600 font-bold text-2xl">02</span><div><div class="font-bold text-sm">隱私資訊管理</div><div class="text-xs text-slate-500">ISO 27701 · PIMS</div></div></div>
+          <div class="flex items-center gap-3"><span class="text-emerald-600 font-bold text-2xl">03</span><div><div class="font-bold text-sm">治理與持續改善</div><div class="text-xs text-slate-500">Risk · Governance · Resilience</div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container-wide">
+        <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          <div class="about-visual reveal">
+            <div class="about-emblem"><div class="about-emblem-inner"><svg viewBox="0 0 100 100" fill="none" aria-hidden="true"><path d="M50 10 78 21v23c0 20-12 35-28 44C34 79 22 64 22 44V21L50 10Z" stroke="currentColor" stroke-width="2.5"/><path d="M36 49h28M50 35v28" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><circle cx="50" cy="50" r="42" stroke="currentColor" stroke-opacity=".25" stroke-dasharray="2 6"/></svg></div></div>
+            <div class="about-note"><div class="eyebrow mb-1">MY APPROACH</div><div class="font-bold text-lg">合規只是起點，韌性才是目標。</div><div class="text-sm text-slate-500">讓制度融入營運，讓能力留在組織。</div></div>
+          </div>
+          <div class="reveal reveal-delay-1">
+            <p class="eyebrow mb-4">ABOUT ME / 關於我</p>
+            <h2 class="section-title mb-6">讓國際標準，成為組織真正運作的能力。</h2>
+            <p class="section-lead mb-5">在快速變動的數位環境中，資訊安全與隱私保護不只是合規要求，更是組織建立信任、管理風險與持續營運的重要基礎。</p>
+            <p class="text-slate-600 mb-7">我深耕資安管理顧問領域，重視從組織現況與實際工作流程出發，將複雜的標準要求轉化為團隊理解、執行並持續改善的管理方法。不只協助準備稽核，更希望制度能在專案結束後持續發揮作用。</p>
+            <div class="grid grid-cols-2 gap-3 mb-8">
+              <div class="metric"><div class="metric-number gradient-text">6<span class="text-xl"> 年</span></div><div class="text-sm text-slate-500 mt-2">資安管理顧問經驗</div></div>
+              <div class="metric"><div class="metric-number gradient-text">40<span class="text-xl">+</span></div><div class="text-sm text-slate-500 mt-2">公民營機構服務經驗</div></div>
+            </div>
+            <div class="flex flex-wrap gap-2"><span class="tag">ISO 27001</span><span class="tag">ISO 27701</span><span class="tag">資安治理</span><span class="tag">個資保護</span><span class="tag">風險管理</span></div>
+          </div>
+        </div>
+        <div class="grid md:grid-cols-3 gap-5 mt-16">
+          <article class="p-6 rounded-2xl border border-slate-200 reveal"><div class="icon-box mb-4"><svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3 20 7v5c0 5-3.5 8-8 10-4.5-2-8-5-8-10V7l8-4Z"/><path d="m8 12 2.5 2.5L16 9"/></svg></div><h3 class="font-bold text-lg mb-2">務實落地</h3><p class="text-sm text-slate-600">不以文件數量衡量成果，而是讓管理要求能對應實際流程與工作情境。</p></article>
+          <article class="p-6 rounded-2xl border border-slate-200 reveal reveal-delay-1"><div class="icon-box mb-4"><svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><h3 class="font-bold text-lg mb-2">持續改善</h3><p class="text-sm text-slate-600">把風險辨識、追蹤與改善融入管理循環，逐步建立長期運作能力。</p></article>
+          <article class="p-6 rounded-2xl border border-slate-200 reveal reveal-delay-2"><div class="icon-box mb-4"><svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><h3 class="font-bold text-lg mb-2">共同建立能力</h3><p class="text-sm text-slate-600">與組織團隊協作，協助同仁理解制度、熟悉責任並逐步具備自主維運能力。</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section soft-bg">
+      <div class="container-wide">
+        <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-12">
+          <div class="reveal"><p class="eyebrow mb-4">SERVICES / 專業服務</p><h2 class="section-title mb-4">把標準要求，轉化為<br class="hidden sm:block">組織的日常能力。</h2><p class="section-lead">從現況診斷、風險評估到制度建置與內部培訓，依組織需求規劃適切的導入路徑。</p></div>
+          <a class="btn-secondary self-start lg:self-auto reveal" href="https://calendar.app.google/GBNMT4ESxxPKFXq26" target="_blank" rel="noopener noreferrer">討論您的需求 ↗</a>
+        </div>
+        <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-5">
+          <article class="service-card reveal"><div class="icon-box mb-5"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3 20 7v5c0 5-3.5 8-8 10-4.5-2-8-5-8-10V7l8-4Z"/><path d="M9 12h6M12 9v6"/></svg></div><span class="tag mb-4">ISO 27001</span><h3 class="text-xl font-bold mt-3 mb-3">資訊安全管理系統</h3><p class="text-sm text-slate-600 mb-5">協助組織辨識資訊資產與風險，建立適合營運情境的 ISMS 管理制度。</p><div class="text-sm space-y-2 mb-6"><p><strong>常見需求：</strong>制度尚未成形、流程分散、風險管理缺乏一致性。</p><p><strong>工作重點：</strong>現況盤點、風險評鑑、制度文件、教育訓練與稽核準備。</p></div><a class="text-blue-600 font-bold text-sm inline-flex items-center gap-2" href="https://calendar.app.google/GBNMT4ESxxPKFXq26" target="_blank" rel="noopener noreferrer">了解適合的導入方式 <span aria-hidden="true">→</span></a></article>
+          <article class="service-card reveal reveal-delay-1"><div class="icon-box mb-5"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="8" r="4"/><path d="M5 21v-2a7 7 0 0 1 14 0v2M9 8h6M12 5v6"/></svg></div><span class="tag mb-4">ISO 27701</span><h3 class="text-xl font-bold mt-3 mb-3">隱私資訊管理系統</h3><p class="text-sm text-slate-600 mb-5">協助組織梳理個人資料處理活動，建立隱私治理與管理流程。</p><div class="text-sm space-y-2 mb-6"><p><strong>常見需求：</strong>個資責任不清、流程難追蹤、隱私風險缺少系統化管理。</p><p><strong>工作重點：</strong>資料流程盤點、角色責任、隱私風險與影響評估機制。</p></div><a class="text-blue-600 font-bold text-sm inline-flex items-center gap-2" href="https://calendar.app.google/GBNMT4ESxxPKFXq26" target="_blank" rel="noopener noreferrer">討論隱私治理需求 <span aria-hidden="true">→</span></a></article>
+          <article class="service-card reveal reveal-delay-2"><div class="icon-box mb-5"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83m8.48 8.48 2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.48-8.48 2.83-2.83"/><circle cx="12" cy="12" r="5"/></svg></div><span class="tag mb-4">AI Governance</span><h3 class="text-xl font-bold mt-3 mb-3">AI 管理治理相關領域</h3><p class="text-sm text-slate-600 mb-5">從治理責任、風險與管理流程角度，協助組織理解 AI 管理系統相關議題。</p><div class="text-sm space-y-2 mb-6"><p><strong>常見需求：</strong>導入 AI 工具後，治理責任與風險管理方式尚待釐清。</p><p><strong>工作重點：</strong>依組織需求討論 AI 治理架構、風險管理與制度規劃方向。</p></div><a class="text-blue-600 font-bold text-sm inline-flex items-center gap-2" href="https://calendar.app.google/GBNMT4ESxxPKFXq26" target="_blank" rel="noopener noreferrer">交流 AI 治理議題 <span aria-hidden="true">→</span></a></article>
+          <article class="service-card reveal"><div class="icon-box mb-5"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg></div><h3 class="text-xl font-bold mb-3">資安與隱私整合治理</h3><p class="text-sm text-slate-600 mb-5">從組織整體管理角度，梳理資安、個資保護及相關法遵要求之間的關聯。</p><div class="text-sm space-y-2 mb-6"><p><strong>常見需求：</strong>不同制度重複作業、權責分散或管理流程不一致。</p><p><strong>工作重點：</strong>整合管理機制、釐清權責與建立持續改善節奏。</p></div><a class="text-blue-600 font-bold text-sm inline-flex items-center gap-2" href="https://calendar.app.google/GBNMT4ESxxPKFXq26" target="_blank" rel="noopener noreferrer">探索整合方式 <span aria-hidden="true">→</span></a></article>
+          <article class="service-card reveal reveal-delay-1"><div class="icon-box mb-5"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 19V5M4 19h17"/><path d="m7 15 4-4 3 2 5-7"/></svg></div><h3 class="text-xl font-bold mb-3">風險評估與管理制度</h3><p class="text-sm text-slate-600 mb-5">協助組織建立風險辨識、評估、處理與追蹤機制，讓管理決策更有依據。</p><div class="text-sm space-y-2 mb-6"><p><strong>常見需求：</strong>風險清單與實際營運脫節，改善措施缺少追蹤。</p><p><strong>工作重點：</strong>風險評鑑方法、處理計畫、責任分工與追蹤機制。</p></div><a class="text-blue-600 font-bold text-sm inline-flex items-center gap-2" href="https://calendar.app.google/GBNMT4ESxxPKFXq26" target="_blank" rel="noopener noreferrer">討論風險管理需求 <span aria-hidden="true">→</span></a></article>
+          <article class="service-card reveal reveal-delay-2"><div class="icon-box mb-5"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 4h16v16H4z"/><path d="m8 12 2.5 2.5L16 9M8 7h3"/></svg></div><h3 class="text-xl font-bold mb-3">教育訓練與內部稽核</h3><p class="text-sm text-slate-600 mb-5">透過培訓、演練與改善，協助團隊理解制度要求並提升執行能力。</p><div class="text-sm space-y-2 mb-6"><p><strong>常見需求：</strong>制度已建立，但同仁不熟悉流程或稽核準備不足。</p><p><strong>工作重點：</strong>依組織情境規劃訓練、稽核演練與改善追蹤。</p></div><a class="text-blue-600 font-bold text-sm inline-flex items-center gap-2" href="https://calendar.app.google/GBNMT4ESxxPKFXq26" target="_blank" rel="noopener noreferrer">規劃團隊培訓 <span aria-hidden="true">→</span></a></article>
+        </div>
+        <p class="text-xs text-slate-500 mt-6">服務範圍與實際工作內容將依組織需求、合作約定及相關標準／驗證機構規定確認。網站內容不構成取得認證或特定法遵結果的保證。</p>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="container-wide">
+        <div class="grid lg:grid-cols-[.8fr_1.2fr] gap-12">
+          <div class="reveal"><p class="eyebrow mb-4">EXPERIENCE / 服務經驗</p><h2 class="section-title mb-5">理解不同產業的情境，才能設計可行的制度。</h2><p class="section-lead mb-7">累積逾 40 家公民營機構的服務經驗，接觸不同組織規模、工作流程與管理需求。以下呈現產業經驗範圍，不代表客戶推薦或特定成果背書。</p><div class="rounded-2xl bg-blue-50 border border-blue-100 p-5"><div class="text-sm font-bold text-blue-900 mb-2">核心工作觀點</div><p class="text-sm text-blue-900/80">制度必須回應組織真正面對的風險，也必須能被人理解、執行與持續改善。</p></div></div>
+          <div class="grid sm:grid-cols-2 gap-4">
+            <article class="industry-card reveal"><div class="icon-box mb-4"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 10h1m4 0h1M9 14h1m4 0h1M10 21v-4h4v4"/></svg></div><h3 class="font-bold text-lg mb-2">政府與公共服務</h3><p class="text-sm text-slate-600">理解公共服務流程、跨單位協作與制度管理需求。</p></article>
+            <article class="industry-card reveal reveal-delay-1"><div class="icon-box mb-4"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11Z"/><path d="M12 8v8M8 12h8"/></svg></div><h3 class="font-bold text-lg mb-2">醫療與健康照護</h3><p class="text-sm text-slate-600">關注敏感資訊保護、營運流程與管理責任的協調。</p></article>
+            <article class="industry-card reveal"><div class="icon-box mb-4"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M2 10 12 3l10 7M4 10v10h16V10M9 20v-6h6v6"/></svg></div><h3 class="font-bold text-lg mb-2">高等教育</h3><p class="text-sm text-slate-600">面對多元資訊系統、資料使用情境與不同角色權責。</p></article>
+            <article class="industry-card reveal reveal-delay-1"><div class="icon-box mb-4"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18M8 15h3"/></svg></div><h3 class="font-bold text-lg mb-2">金融與保險</h3><p class="text-sm text-slate-600">重視風險管理、資料保護與控制流程的一致性。</p></article>
+            <article class="industry-card reveal sm:col-span-2"><div class="icon-box mb-4"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4M7 8h4M7 12h8"/></svg></div><h3 class="font-bold text-lg mb-2">電信、媒體與科技</h3><p class="text-sm text-slate-600">關注資訊系統、資料流動、供應鏈協作與快速變動的營運環境。</p></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="insights" class="section soft-bg">
+      <div class="container-wide">
+        <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-5 mb-11">
+          <div class="reveal"><p class="eyebrow mb-4">INSIGHTS / 專業觀點</p><h2 class="section-title mb-4">把複雜議題，說清楚、做得到。</h2><p class="section-lead">以實務導入為出發點，持續整理資安、隱私與治理相關知識。</p></div>
+          <span class="text-xs text-slate-500 border border-slate-200 bg-white rounded-full px-3 py-2 self-start reveal">以下為示範文章主題</span>
+        </div>
+        <div class="grid md:grid-cols-3 gap-5">
+          <article class="insight-card reveal"><div class="flex items-center justify-between mb-5"><span class="tag">ISO 27001</span><span class="text-xs text-slate-400">示範主題</span></div><h3 class="text-xl font-bold leading-snug mb-3">導入 ISO 27001 前，組織應先盤點哪些事情？</h3><p class="text-sm text-slate-600 mb-6">從管理目標、適用範圍、資訊資產與現有流程開始，建立更務實的導入起點。</p><button class="text-blue-600 font-bold text-sm inline-flex items-center gap-2" data-article="27001">閱讀主題摘要 <span aria-hidden="true">→</span></button></article>
+          <article class="insight-card reveal reveal-delay-1"><div class="flex items-center justify-between mb-5"><span class="tag">隱私治理</span><span class="text-xs text-slate-400">示範主題</span></div><h3 class="text-xl font-bold leading-snug mb-3">ISO 27701 如何協助組織整理個資管理責任？</h3><p class="text-sm text-slate-600 mb-6">以資料處理活動、角色責任與風險評估為線索，理解隱私管理制度的實務價值。</p><button class="text-blue-600 font-bold text-sm inline-flex items-center gap-2" data-article="27701">閱讀主題摘要 <span aria-hidden="true">→</span></button></article>
+          <article class="insight-card reveal reveal-delay-2"><div class="flex items-center justify-between mb-5"><span class="tag">管理實務</span><span class="text-xs text-slate-400">示範主題</span></div><h3 class="text-xl font-bold leading-snug mb-3">如何讓管理制度不只停留在文件裡？</h3><p class="text-sm text-slate-600 mb-6">從責任分工、教育訓練、執行證據與改善追蹤，建立制度持續運作的條件。</p><button class="text-blue-600 font-bold text-sm inline-flex items-center gap-2" data-article="practice">閱讀主題摘要 <span aria-hidden="true">→</span></button></article>
+        </div>
+        <div id="article-detail" class="hidden mt-6 p-6 rounded-2xl border border-blue-100 bg-white shadow-soft" role="status" aria-live="polite">
+          <div class="flex justify-between gap-4 items-start"><div><p class="eyebrow mb-2">主題摘要 · 示範內容</p><h3 id="article-title" class="text-xl font-bold mb-3"></h3><p id="article-body" class="text-slate-600"></p></div><button id="close-article" class="shrink-0 w-9 h-9 rounded-full border border-slate-200" aria-label="關閉文章摘要">×</button></div>
+          <p class="text-xs text-slate-400 mt-4">此區為網站展示用的示範摘要，正式上線前請替換為經確認的完整文章。</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="process" class="section">
+      <div class="container-wide">
+        <div class="text-center max-w-3xl mx-auto mb-12 reveal"><p class="eyebrow mb-4">PROCESS / 合作流程</p><h2 class="section-title mb-5">從理解現況，到建立自主能力。</h2><p class="section-lead mx-auto">每個組織的起點不同。合作流程以需求與現況為基礎，依實際範圍調整工作內容。</p></div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
+          <article class="process-step reveal"><div class="process-num mb-5">01</div><h3 class="font-bold mb-2">初步交流</h3><p class="text-sm text-slate-600">了解組織目標、目前挑戰與預期方向。</p></article>
+          <article class="process-step reveal reveal-delay-1"><div class="process-num mb-5">02</div><h3 class="font-bold mb-2">現況盤點</h3><p class="text-sm text-slate-600">檢視管理制度、實務流程與差距。</p></article>
+          <article class="process-step reveal reveal-delay-2"><div class="process-num mb-5">03</div><h3 class="font-bold mb-2">制度建置</h3><p class="text-sm text-slate-600">依組織情境規劃制度、文件與作業方式。</p></article>
+          <article class="process-step reveal"><div class="process-num mb-5">04</div><h3 class="font-bold mb-2">培訓與演練</h3><p class="text-sm text-slate-600">協助團隊理解要求、執行流程並追蹤改善。</p></article>
+          <article class="process-step reveal reveal-delay-1"><div class="process-num mb-5">05</div><h3 class="font-bold mb-2">驗證準備與改善</h3><p class="text-sm text-slate-600">依約定協助準備驗證工作，建立持續維運方向。</p></article>
+        </div>
+        <div class="mt-8 flex justify-center reveal"><a class="btn-primary" href="https://calendar.app.google/GBNMT4ESxxPKFXq26" target="_blank" rel="noopener noreferrer">從初步交流開始 ↗</a></div>
+      </div>
+    </section>
+
+    <section id="faq" class="section soft-bg">
+      <div class="container-wide">
+        <div class="grid lg:grid-cols-[.75fr_1.25fr] gap-12">
+          <div class="reveal"><p class="eyebrow mb-4">FAQ / 常見問題</p><h2 class="section-title mb-5">在開始之前，先釐清幾個關鍵問題。</h2><p class="section-lead mb-7">若您的情況較特殊，也歡迎直接預約交流，依組織現況討論可能的方向。</p><a class="btn-secondary" href="https://calendar.app.google/GBNMT4ESxxPKFXq26" target="_blank" rel="noopener noreferrer">預約初步諮詢 ↗</a></div>
+          <div class="reveal reveal-delay-1">
+            <details class="faq-item"><summary>ISO 27001 與 ISO 27701 有什麼差異？</summary><div class="faq-answer">ISO 27001 聚焦於資訊安全管理系統（ISMS）；ISO 27701 則聚焦於隱私資訊管理，協助組織系統化管理個人資料處理相關的隱私責任與風險。實際適用方式需依組織業務、資料處理情境與管理目標評估。</div></details>
+            <details class="faq-item"><summary>我的組織適合從哪一套管理制度開始？</summary><div class="faq-answer">可先釐清主要管理目標、現有制度、資料類型、風險情境與相關要求。如果核心需求在資訊安全管理，通常會先評估 ISMS；若涉及個人資料處理與隱私治理，也可評估 PIMS 及整合規劃。建議先透過初步交流確認範圍。</div></details>
+            <details class="faq-item"><summary>導入 ISO 管理系統需要多久？</summary><div class="faq-answer">時程會受到組織規模、適用範圍、現有管理成熟度、資源投入與改善事項影響，因此不宜在未了解現況前承諾固定期限。完成初步盤點後，才能共同討論合理的工作階段與時程。</div></details>
+            <details class="faq-item"><summary>顧問輔導會包含哪些工作？</summary><div class="faq-answer">可依需求涵蓋現況診斷、差距分析、風險評估、制度與文件規劃、教育訓練、內部稽核演練及驗證準備等。實際工作範圍會在需求確認與合作約定後明確界定。</div></details>
+            <details class="faq-item"><summary>導入後可以保證取得證書嗎？</summary><div class="faq-answer">不能在未經第三方驗證前保證驗證結果。顧問輔導的目標是協助組織建立並執行符合適用要求的管理系統、處理差距並準備驗證；實際結果仍取決於組織的制度執行與驗證機構的獨立審查。</div></details>
+            <details class="faq-item"><summary>如何預約初步諮詢？</summary><div class="faq-answer">點選本頁的「預約專業諮詢」按鈕，即可前往 Google 預約頁面。建議先準備組織背景、目前需求、預計目標及希望討論的問題，讓交流更有效率。</div></details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="solutions" class="section soft-bg">
+      <div class="container-wide">
+        <div class="text-center max-w-3xl mx-auto mb-11 reveal">
+          <p class="eyebrow mb-4">SOLUTIONS / 解決方案</p>
+          <h2 class="section-title mb-5">為組織建立更穩健的資安制度</h2>
+          <p class="section-lead mx-auto">延伸專業服務，協助您從制度建立到人員培訓，逐步降低資料外洩風險。</p>
+        </div>
+        <div class="max-w-3xl mx-auto">
+          <article class="industry-card reveal flex flex-col sm:flex-row gap-6 items-start">
+            <div class="icon-box shrink-0 mb-0" aria-hidden="true"><i class="fa-solid fa-user-tie"></i></div>
+            <div class="flex-1">
+              <h3 class="font-bold text-xl mb-3">顧問輔導服務</h3>
+              <p class="text-sm text-slate-600 mb-5">透過專業團隊，進行制度建立，於輔導過程中培養組織人員的資安意識及降低資料外洩之風險。</p>
+              <a class="btn-secondary inline-flex items-center gap-2" href="https://www.safelink.com.tw/" target="_blank" rel="noopener noreferrer">了解服務內容 <i class="fa-solid fa-arrow-up-right-from-square text-xs" aria-hidden="true"></i></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact-me" class="section soft-bg">
+      <div class="container-wide">
+        <div class="grid lg:grid-cols-[1.05fr_.95fr] gap-10 items-center">
+          <div class="reveal">
+            <p class="eyebrow mb-4">CONTACT ME / 聯絡我</p>
+            <h2 class="section-title mb-5">一起聊聊您的資安需求</h2>
+            <p class="section-lead mb-7">歡迎透過社群與我聯繫，或填寫需求表單，讓我先了解您的組織現況與希望解決的問題。</p>
+            <div class="flex flex-wrap gap-3" aria-label="社群聯絡方式">
+              <a class="icon-box" href="https://line.me/ti/p/xXzeihXnHN" target="_blank" rel="noopener noreferrer" aria-label="LINE" title="LINE"><i class="fa-brands fa-line" aria-hidden="true"></i></a>
+              <a class="icon-box" href="https://www.facebook.com/wen.hung.huang.773212" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+            </div>
+          </div>
+          <div class="industry-card reveal reveal-delay-1">
+            <div class="icon-box mb-5" aria-hidden="true"><i class="fa-solid fa-clipboard-list"></i></div>
+            <h3 class="font-bold text-xl mb-3">填寫需求表單</h3>
+            <p class="text-sm text-slate-600 mb-6">請留下您的需求與聯絡資訊，我會依據內容回覆適合的合作方向。</p>
+            <a class="btn-primary inline-flex items-center gap-2" href="https://forms.gle/6MnFeMF7MB9qUTS36" target="_blank" rel="noopener noreferrer">前往填寫表單 <i class="fa-solid fa-arrow-up-right-from-square text-xs" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section !pt-10">
+      <div class="container-wide">
+        <div class="cta-panel reveal">
+          <div class="relative z-10 max-w-3xl">
+            <p class="eyebrow mb-4">LET'S BUILD RESILIENCE</p>
+            <h2 class="section-title mb-5">從理解風險開始，<br class="hidden sm:block">建立真正可持續的數位韌性。</h2>
+            <p class="section-lead mb-8">無論您正準備導入管理系統、改善既有制度，或希望進一步了解資安與隱私治理，都歡迎預約交流，討論最適合您組織的方向。</p>
+            <a class="btn-primary" href="https://calendar.app.google/GBNMT4ESxxPKFXq26" target="_blank" rel="noopener noreferrer">預約專業諮詢 <span aria-hidden="true">↗</span></a>
+            <p class="text-xs text-slate-500 mt-4">合規只是起點，韌性才是目標。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-slate-200 pt-10 pb-8">
+    <div class="container-wide">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-7">
+        <a href="#home" class="flex items-center gap-3"><span class="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-600 to-violet-600 text-white grid place-items-center font-bold">WH</span><span><span class="block font-bold">黃文鴻</span><span class="block text-xs text-slate-500">資安治理・隱私管理・數位韌性</span></span></a>
+        <nav class="flex flex-wrap gap-x-5 gap-y-2 text-sm" aria-label="頁尾導覽"><a class="footer-link" href="#about">關於我</a><a class="footer-link" href="#services">專業服務</a><a class="footer-link" href="#experience">服務經驗</a><a class="footer-link" href="#insights">專業觀點</a><a class="footer-link" href="#contact">聯絡與預約</a></nav>
+        <a class="text-blue-600 font-bold text-sm" href="https://calendar.app.google/GBNMT4ESxxPKFXq26" target="_blank" rel="noopener noreferrer">預約諮詢 ↗</a>
+      </div>
+      <div class="mt-8 pt-5 border-t border-slate-100 flex flex-col sm:flex-row gap-2 justify-between text-xs text-slate-400"><p>© <span id="year"></span> 黃文鴻. All rights reserved.</p><p>本網站資訊供專業交流參考，實際服務範圍依雙方約定為準。</p></div>
+    </div>
+  </footer>
+
+  <script>
+    // 行動版導覽選單
+    const menuToggle = document.getElementById('mobile-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuToggle.addEventListener('click', () => {
+      const isOpen = mobileMenu.classList.toggle('open');
+      menuToggle.setAttribute('aria-expanded', String(isOpen));
+      menuToggle.setAttribute('aria-label', isOpen ? '關閉導覽選單' : '開啟導覽選單');
+    });
+    mobileMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+      mobileMenu.classList.remove('open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+      menuToggle.setAttribute('aria-label', '開啟導覽選單');
+    }));
+
+    // 捲動時更新導覽列外觀
+    const header = document.getElementById('site-header');
+    const updateHeader = () => header.classList.toggle('scrolled', window.scrollY > 12);
+    window.addEventListener('scroll', updateHeader, {passive:true});
+    updateHeader();
+
+    // 只在允許動態效果時執行打字機動畫；完整標題仍可由 HTML 讀取
+    const titleEl = document.getElementById('typed-title');
+    const cursor = document.getElementById('type-cursor');
+    const fullTitle = '不只拿證，更帶走能力。';
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!reduceMotion) {
+      titleEl.textContent = '';
+      let i = 0;
+      const typeNext = () => {
+        if (i < fullTitle.length) {
+          titleEl.textContent += fullTitle.charAt(i++);
+          window.setTimeout(typeNext, 105);
+        } else {
+          window.setTimeout(() => cursor.style.display = 'none', 1000);
+        }
+      };
+      window.setTimeout(typeNext, 250);
+    } else {
+      cursor.style.display = 'none';
+    }
+
+    // 滾動進場動畫；不支援 IntersectionObserver 時直接顯示
+    const revealEls = document.querySelectorAll('.reveal');
+    if ('IntersectionObserver' in window && !reduceMotion) {
+      const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            obs.unobserve(entry.target);
+          }
+        });
+      }, {threshold:0.12, rootMargin:'0px 0px -35px 0px'});
+      revealEls.forEach(el => observer.observe(el));
+    } else {
+      revealEls.forEach(el => el.classList.add('visible'));
+    }
+
+    // 導覽列目前區塊提示
+    const sectionLinks = [...document.querySelectorAll('.desktop-nav .nav-link')];
+    const sections = sectionLinks.map(link => document.querySelector(link.getAttribute('href'))).filter(Boolean);
+    if ('IntersectionObserver' in window) {
+      const sectionObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            sectionLinks.forEach(link => link.classList.toggle('active', link.getAttribute('href') === '#' + entry.target.id));
+          }
+        });
+      }, {rootMargin:'-30% 0px -60% 0px'});
+      sections.forEach(section => sectionObserver.observe(section));
+    }
+
+    // 示範文章摘要互動
+    const articleContent = {
+      '27001': {title:'導入 ISO 27001 前，組織應先盤點哪些事情？', body:'建議先確認導入目標與管理系統適用範圍，再盤點關鍵資訊資產、既有管理流程、利害關係人需求與目前風險管理方式。先理解組織真正的營運情境，能讓後續差距分析與制度設計更貼近實務。此摘要為示範內容，正式發表前仍需編修與確認。'},
+      '27701': {title:'ISO 27701 如何協助組織整理個資管理責任？', body:'可從個人資料處理活動、資料角色、內部責任、相關風險及既有程序著手，逐步釐清哪些流程需要被管理、留下什麼執行紀錄，以及如何追蹤改善。實際適用方式需依組織情境與當時有效的標準要求確認。此摘要為示範內容。'},
+      'practice': {title:'如何讓管理制度不只停留在文件裡？', body:'制度能否落地，往往取決於責任是否明確、流程是否融入日常工作、同仁是否理解要求，以及管理者是否定期檢視執行證據與改善事項。透過適切的訓練、演練、內部稽核與追蹤，逐步培養組織自主維運能力。此摘要為示範內容。'}
+    };
+    const detail = document.getElementById('article-detail');
+    document.querySelectorAll('[data-article]').forEach(button => button.addEventListener('click', () => {
+      const item = articleContent[button.dataset.article];
+      document.getElementById('article-title').textContent = item.title;
+      document.getElementById('article-body').textContent = item.body;
+      detail.classList.remove('hidden');
+      detail.scrollIntoView({behavior:reduceMotion ? 'auto' : 'smooth', block:'nearest'});
+    }));
+    document.getElementById('close-article').addEventListener('click', () => detail.classList.add('hidden'));
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
