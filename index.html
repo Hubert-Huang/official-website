@@ -3,12 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="黃文鴻">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0A3D91">
   <meta name="theme-color" content="#ffffff">
   <meta name="description" content="黃文鴻，博創資訊科技輔導顧問，專注 ISO 27001、ISO 27701、資安治理與隱私管理，協助企業及政府組織建立可落地、可持續改善的管理能力。">
   <meta property="og:title" content="黃文鴻｜不只拿證，更帶走能力">
   <meta property="og:description" content="以國際標準為基礎，建立可持續運作的資安、隱私治理與數位韌性能力。">
   <meta property="og:type" content="website">
-  <title>黃文鴻｜不只拿證，更帶走能力</title>
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:image" content="作品集/頭像.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="黃文鴻｜資安治理與隱私管理顧問">
+  <meta name="twitter:description" content="提供資訊安全、隱私管理、風險治理與教育訓練服務，協助組織建立可落地、可持續改善的管理制度。">
+  <meta name="twitter:image" content="作品集/頭像.jpg">
+  <title>黃文鴻｜資安治理與隱私管理顧問</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -18,7 +27,7 @@
     tailwind.config = {
       theme: { extend: {
         colors: { ink:'#1F2937', bluebrand:'#005BAC', navblue:'#0A3D91', teal:'#00A7B5', cyan:'#5CC8D7', accent:'#7AC143', cloud:'#F5F7FA' },
-        fontFamily: { sans:['DM Sans','Noto Sans TC','system-ui','sans-serif'] },
+        fontFamily: { sans:['Noto Sans TC','system-ui','sans-serif'] },
         boxShadow: { soft:'0 16px 48px rgba(0,91,172,.12)', card:'0 8px 30px rgba(31,41,55,.08)' }
       }}
     }
@@ -123,7 +132,70 @@
     .process-num{color:#5cc8d7}
     .faq-item summary:after{color:#005bac}
     .footer-link:hover{color:#005bac}
+    .about-portrait{min-height:520px;background:#d9e2ec}
+    .about-portrait>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 28%;filter:saturate(.92)}
+    .about-portrait:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,61,145,0) 48%,rgba(10,61,145,.72) 100%);pointer-events:none}
+    .about-portrait .about-emblem{display:none}
+    .about-portrait .about-note{z-index:1;color:#fff;background:rgba(10,61,145,.78);border-color:rgba(255,255,255,.34)}
+    .about-portrait .about-note .eyebrow,.about-portrait .about-note .text-slate-500{color:#fff!important}
+    .portfolio-grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:20px}
+    .portfolio-card{grid-column:span 4;margin:0;overflow:hidden;border:1px solid #d9e2ec;border-radius:22px;background:#fff;box-shadow:0 8px 30px rgba(31,41,55,.06);transition:transform .28s,box-shadow .28s,border-color .28s}
+    .portfolio-card:hover{transform:translateY(-5px);border-color:#5cc8d7;box-shadow:0 18px 45px rgba(0,91,172,.13)}
+    .portfolio-card-wide{grid-column:span 8}
+    .portfolio-card img{display:block;width:100%;height:245px;object-fit:cover;transition:transform .45s}
+    .portfolio-card-wide img{height:300px}
+    .portfolio-card:hover img{transform:scale(1.035)}
+    .portfolio-card figcaption{display:flex;flex-direction:column;gap:5px;padding:17px 19px 19px}
+    .portfolio-card figcaption span{font-size:.72rem;letter-spacing:.12em;font-weight:700;color:#00a7b5;text-transform:uppercase}
+    .portfolio-card figcaption strong{font-size:1rem;color:#1f2937}
+    .portfolio-card-slogan{display:none}
+    .portfolio-card-slogan img{height:300px;filter:saturate(.8)}
+    .portfolio-card-slogan figcaption strong{color:#fff}
+    .insight-feature{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);align-items:center;gap:32px;margin-bottom:28px;padding:20px;border:1px solid #d9e2ec;border-radius:24px;background:#fff;box-shadow:0 8px 30px rgba(31,41,55,.06)}
+    .insight-feature img{width:100%;height:260px;object-fit:cover;border-radius:17px}
+    .insight-feature h3{color:#0a3d91}
+    @media(max-width:760px){.about-portrait{min-height:460px}.portfolio-grid{display:grid;grid-template-columns:1fr}.portfolio-card,.portfolio-card-wide,.portfolio-card-slogan{grid-column:auto}.portfolio-card img,.portfolio-card-wide img,.portfolio-card-slogan img{height:230px}.insight-feature{grid-template-columns:1fr;gap:20px;padding:16px}.insight-feature img{height:220px}}
+    @media(max-width:760px){.about-portrait{min-height:460px}.portfolio-grid{display:grid;grid-template-columns:1fr}.portfolio-card,.portfolio-card-wide,.portfolio-card-slogan{grid-column:auto}.portfolio-card img,.portfolio-card-wide img,.portfolio-card-slogan img{height:230px}}
+    /* UI/UX refinement */
+    html{font-size:16px;background:#f5f7fa}
+    body,button,input,textarea,select{font-family:"Noto Sans TC",system-ui,sans-serif!important}
+    body{color:#1f2937;line-height:1.8;text-rendering:optimizeLegibility}
+    img{max-width:100%;height:auto}
+    .container-wide{width:min(1180px,calc(100% - 40px))}
+    .section{padding:clamp(72px,9vw,116px) 0}
+    .section-title{line-height:1.28;letter-spacing:-.025em;color:#1f2937}
+    .section-lead{line-height:1.9;color:#475569}
+    .eyebrow{letter-spacing:.12em;color:#005bac}
+    .nav-shell{border-bottom-color:rgba(217,226,236,.75);transition:background .25s,box-shadow .25s}
+    .nav-shell.scrolled{background:rgba(255,255,255,.94);box-shadow:0 8px 26px rgba(10,61,145,.08)}
+    .nav-link{font-weight:600;color:#475569;padding-block:8px}
+    .nav-link:hover,.nav-link.active{color:#005bac}
+    .btn-primary,.btn-secondary{min-height:48px;white-space:nowrap}
+    .btn-primary{background:linear-gradient(110deg,#005bac,#0a3d91);box-shadow:0 10px 24px rgba(0,91,172,.2)}
+    .btn-primary:hover{box-shadow:0 14px 30px rgba(0,91,172,.28)}
+    .btn-secondary{border-color:#b8c9d8;background:#fff;color:#1f2937}
+    .btn-secondary:hover{border-color:#00a7b5;background:#eaf8fa}
+    .service-card,.insight-card,.industry-card,.process-step,.metric,.portfolio-card,.insight-feature{box-shadow:0 8px 28px rgba(31,41,55,.055)}
+    .service-card:hover,.insight-card:hover,.industry-card:hover{border-color:#5cc8d7;box-shadow:0 18px 42px rgba(0,91,172,.12)}
+    .tag{background:#eaf8fa;color:#0a3d91}
+    .faq-item summary{line-height:1.55;color:#1f2937}
+    .faq-answer{line-height:1.85;color:#475569}
+    .cta-panel{background:linear-gradient(120deg,#eaf4fb 0%,#eef8f8 58%,#eff8e8 100%);border-color:#c7e2f2}
+    .reveal{transition-duration:.55s}
+    @media(max-width:760px){.container-wide{width:min(calc(100% - 32px),600px)}.section{padding:68px 0}.hero{padding-top:112px}.hero-title{letter-spacing:-.035em}.section-title{font-size:clamp(1.9rem,9vw,2.7rem)}.btn-primary,.btn-secondary{width:100%}}
   </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"黃文鴻",
+    "jobTitle":"資安治理與隱私管理顧問",
+    "description":"提供資訊安全、隱私管理、風險治理與教育訓練服務。",
+    "image":"作品集/頭像.jpg",
+    "sameAs":["https://www.facebook.com/wen.hung.huang.773212","https://line.me/ti/p/xXzeihXnHN"],
+    "knowsAbout":["ISO 27001","ISO 27701","資訊安全管理","隱私管理","風險治理","教育訓練"]
+  }
+  </script>
 </head>
 <body>
   <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[100] focus:bg-white focus:px-4 focus:py-2 focus:shadow-lg">跳至主要內容</a>
@@ -191,7 +263,8 @@
     <section id="about" class="section">
       <div class="container-wide">
         <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          <div class="about-visual reveal">
+          <div class="about-visual about-portrait reveal">
+            <img src="作品集/頭像.jpg" alt="黃文鴻個人照片" loading="lazy">
             <div class="about-emblem"><div class="about-emblem-inner"><svg viewBox="0 0 100 100" fill="none" aria-hidden="true"><path d="M50 10 78 21v23c0 20-12 35-28 44C34 79 22 64 22 44V21L50 10Z" stroke="currentColor" stroke-width="2.5"/><path d="M36 49h28M50 35v28" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><circle cx="50" cy="50" r="42" stroke="currentColor" stroke-opacity=".25" stroke-dasharray="2 6"/></svg></div></div>
             <div class="about-note"><div class="eyebrow mb-1">MY APPROACH</div><div class="font-bold text-lg">合規只是起點，韌性才是目標。</div><div class="text-sm text-slate-500">讓制度融入營運，讓能力留在組織。</div></div>
           </div>
@@ -248,12 +321,32 @@
       </div>
     </section>
 
+    <section id="portfolio" class="section soft-bg">
+      <div class="container-wide">
+        <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-5 mb-11">
+          <div class="reveal"><p class="eyebrow mb-4">PORTFOLIO / 現場紀實</p><h2 class="section-title mb-4">把制度帶進真實的學習現場</h2><p class="section-lead">從企業教室到團隊交流，透過實際培訓與討論，讓資安治理成為組織可以理解、執行並持續改善的能力。</p></div>
+          <span class="text-xs text-slate-500 border border-slate-200 bg-white rounded-full px-3 py-2 self-start reveal">教育訓練・分享・觀點</span>
+        </div>
+        <div class="portfolio-grid">
+          <figure class="portfolio-card portfolio-card-wide reveal"><img src="作品集/台灣 Top3 航空業-training-classroom-04.png" alt="台灣 Top3 航空業教育訓練現場" loading="lazy"><figcaption><span>企業教育訓練</span><strong>在真實工作情境中建立共識</strong></figcaption></figure>
+          <figure class="portfolio-card reveal reveal-delay-1"><img src="作品集/台灣 Top3 電信業-training-classroom-01.png" alt="台灣 Top3 電信業教育訓練現場" loading="lazy"><figcaption><span>團隊培訓</span><strong>讓制度成為團隊的共同語言</strong></figcaption></figure>
+          <figure class="portfolio-card reveal reveal-delay-2"><img src="作品集/工研院-training-classroom-02.png" alt="工研院教育訓練現場" loading="lazy"><figcaption><span>現場交流</span><strong>從問題出發，找到可落地的方法</strong></figcaption></figure>
+          <figure class="portfolio-card portfolio-card-wide reveal"><img src="作品集/資策會-training-classroom-03.png" alt="資策會教育訓練現場" loading="lazy"><figcaption><span>知識分享</span><strong>把複雜議題轉化為可執行的行動</strong></figcaption></figure>
+          <figure class="portfolio-card portfolio-card-slogan reveal reveal-delay-1"><img src="作品集/管理系統的無限迴圈.jpg" alt="管理系統的無限迴圈主題照片" loading="lazy"><figcaption><span>MY SLOGAN / 我的觀點</span><strong>制度不是終點，而是持續改善的循環</strong></figcaption></figure>
+        </div>
+      </div>
+    </section>
+
     <section id="insights" class="section soft-bg">
       <div class="container-wide">
         <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-5 mb-11">
           <div class="reveal"><p class="eyebrow mb-4">INSIGHTS / 專業觀點</p><h2 class="section-title mb-4">把複雜議題，說清楚、做得到。</h2><p class="section-lead">以實務導入為出發點，持續整理資安、隱私與治理相關知識。</p></div>
           <span class="text-xs text-slate-500 border border-slate-200 bg-white rounded-full px-3 py-2 self-start reveal">以下為示範文章主題</span>
         </div>
+        <article class="insight-feature reveal">
+          <img src="作品集/管理系統的無限迴圈.jpg" alt="管理系統的無限迴圈主題照片" loading="lazy">
+          <div><p class="eyebrow mb-3">MY SLOGAN / 我的觀點</p><h3 class="text-2xl font-bold leading-snug mb-3">制度不是終點，而是持續改善的循環</h3><p class="text-sm text-slate-600">好的管理系統不應只是被關在文件裡，而是要持續回應現場、協助團隊前進，形成可以反覆檢視與改善的循環。</p></div>
+        </article>
         <div class="grid md:grid-cols-3 gap-5">
           <article class="insight-card reveal"><div class="flex items-center justify-between mb-5"><span class="tag">ISO 27001</span><span class="text-xs text-slate-400">示範主題</span></div><h3 class="text-xl font-bold leading-snug mb-3">導入 ISO 27001 前，組織應先盤點哪些事情？</h3><p class="text-sm text-slate-600 mb-6">從管理目標、適用範圍、資訊資產與現有流程開始，建立更務實的導入起點。</p><button class="text-blue-600 font-bold text-sm inline-flex items-center gap-2" data-article="27001">閱讀主題摘要 <span aria-hidden="true">→</span></button></article>
           <article class="insight-card reveal reveal-delay-1"><div class="flex items-center justify-between mb-5"><span class="tag">隱私治理</span><span class="text-xs text-slate-400">示範主題</span></div><h3 class="text-xl font-bold leading-snug mb-3">ISO 27701 如何協助組織整理個資管理責任？</h3><p class="text-sm text-slate-600 mb-6">以資料處理活動、角色責任與風險評估為線索，理解隱私管理制度的實務價值。</p><button class="text-blue-600 font-bold text-sm inline-flex items-center gap-2" data-article="27701">閱讀主題摘要 <span aria-hidden="true">→</span></button></article>
